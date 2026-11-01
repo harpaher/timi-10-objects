@@ -38,3 +38,5 @@ let matsedill = [
   { id: 7, nafn: "Sorbet", verd: 1290, flokkur: "Eftirréttur", vegan: true },
 ];
 console.log(matsedill.length);
+console.log(matsedill[0]);
+console.log(matsedill[0]);
