@@ -25,11 +25,11 @@ const rettur2 = {
   verd: 5990,
   flokkur: "Aðalréttur",
   vegan: false,
-  ofnæmi: ["sellerí"],
+  ofnaemi: ["sellerí"],
   naeringagildi: { kcal: 520, protein: 32 },
 };
 
-console.log(rettur2.ofnæmi[0]);
+console.log(rettur2.ofnaemi[0]);
 console.log(rettur2.naeringagildi.kcal);
 
 console.log(rettur2);
@@ -47,3 +47,27 @@ for ([lykill, gildi] of Object.entries(rettur2)) {
 // er að spyrja hvort það sé réttur í rettur2 sem heitir vegan.
 // kemur þá true þegar búið er að skrifa í node í terminal (node .\objects.js)
 console.log("vegan" in rettur2);
+
+const matsedill = [
+  {
+    nafn: "Stöppuð ýsa með tómatsósu",
+    verd: 1990,
+    flokkur: "Aðalréttur",
+    vegan: false,
+  },
+  {
+    nafn: "Nautasteik",
+    verd: 5990,
+    flokkur: "Aðalréttur",
+    vegan: false,
+    ofnaemi: ["sellerí"],
+    naeringagildi: { kcal: 520, protein: 32 },
+  },
+];
+
+console.log(matsedill[1]);
+// til að fá nafn á aðalréttinum get ég skrifað þennan kóða, vinna með lista og einn object:
+console.log(matsedill[1].nafn);
+
+// hér erum við að vinna með lista og tvo objecta
+console.log(matsedill[1].naeringagildi.kcal);
